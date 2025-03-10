@@ -30,6 +30,14 @@ public class Date {
   public void methodAddedByOwner {
 	  System.out.println("Method added by owner");
   }
+
+  // Constructor modified by the collaborator
+  public Date(int tag, int monat, int jahr) {
+    this.day = tag;
+    this.month = monat;
+    this.year = jahr;
+  }
+
   public int getDay() {
     return day;
   }
